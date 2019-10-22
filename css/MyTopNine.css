@@ -108,7 +108,6 @@ nav {
 
    .container {
     display: flex;
-    justify-content: space-arround;
     max-width: 880px;
     width: 100%;
     margin: 42% auto;
@@ -166,6 +165,12 @@ nav {
 
    @media only screen and (max-width: 500px) {
     background-color: @blue;
+
+    .topnine-category img {
+      width: 224px;
+      height: 168px;
+      width: 25%;
+    }
 
   
    
