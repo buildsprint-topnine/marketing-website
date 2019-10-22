@@ -1,26 +1,175 @@
-section {
-    display: block;
-}
-*{
+* {
     box-sizing: border-box;
-}
-html, body {
-    width: 85%;
-    height: 100px;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  html,
+  body {
     font-family: 'Ubuntu', sans-serif;
-    background-color:@blue;
-    
-}
-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 500px) {
+    html,
+    body {
+      width: 100%;
+    }
+  }
+  h1{
+    font-family: 'Ubuntu', sans-serif;
+    color:black;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home .intro img {
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .intro img {
+      width: 100%;
+    }
+  }
+  .home .topnine-images {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    position: sticky;
-    height: 7.1rem;
-    top: 0px;
-    z-index: 999;
-}
-.logo {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .home .topnine-images img {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .topnine-images img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .home .contact {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .home .movies {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .home .Feautures {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+  }
+  .home .Feautures .Feautures-text {
+    width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .Feautures .Feautures-text {
+      margin-top: 20px;
+    }
+  }
+  .home .Feautures .Feautures-text {
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 1.8rem;
+    background-color:black;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-center: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .Feautures .Feautures-text .btn {
+      height: 40px;
+      width: 100%;
+      color: white;
+      font-size: 1.8rem;
+      background-color: #22283A;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 5px;
+      display: flex;
+      align-center: center;
+      justify-content: center;
+    }
+  }
+  .home .Feautures .Feautures-text-img {
+    width: 46%;
+    margin-left: 4%;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .Feautures .Feautures-text-img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .home .Feautures .Feautures-text-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  :hover {
+    background-color: white;
+    color: #22283A;
+  }
+  nav {
+    width: 100%;
+    background-color: #F6F6F6;
+    background-color: #F35667;
+  }
+  @media only screen and (max-width: 500px) {
+    nav {
+      width: 100%;
+    }
+  }
+
+  nav .nav h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  .navigation {
+    width: 60%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    .navigation {
+      width: 100%;
+    }
+  }
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+  }
+  footer {
+    color:black;
+    background:red;
+    padding: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .logo {
     width: 50%;
     height: 100%;
     padding: 1.8rem 3.5rem;
@@ -52,16 +201,11 @@ header {
 
  .nav a {
     margin: 0 2.0rem;
-    color: white;
+    color: red;
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: 600;
 }
- .nav a:last-child {
-    margin-right: 4rem;
-    color: #fe0760;
-}
-
 h1:hover{
     background-color: transparent;
     color: red;
@@ -72,35 +216,3 @@ h1:hover h1 {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
-.container{
-    display: flex;
-    justify-content: space-around;
-}
-
-.container .main-content .topnine-image img {
-    width: 32%;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.container .main-content {
-    margin: 150px;
-}
-
-.container .main-content h1 {
-    font-size: 26px;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 10px;
-}
-
-.container .main-content p {
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 20px;
-    
-}
-
