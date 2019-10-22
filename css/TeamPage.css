@@ -8,16 +8,37 @@ html, body {
     width: 85%;
     height: 100px;
     font-family: 'Ubuntu', sans-serif;
-    background-color:lightskyblue;
+    background-color:@blue;
     
 }
 header {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: sticky;
+    height: 7.1rem;
+    top: 0px;
+    z-index: 999;
 }
+.logo {
+    width: 50%;
+    height: 100%;
+    padding: 1.8rem 3.5rem;
+    align-self: center;
+    color:white;
+    font-size: 3.6rem;
+    font-weight: bold;
+    background: #1a3642;
+    text-decoration: none;
+}
+
 .nav {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    background: #1a3642;
     
 }
 .nav .nav li {
@@ -28,32 +49,54 @@ header {
     text-decoration: none;
 
 }
+
+ .nav a {
+    margin: 0 2.0rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+ .nav a:last-child {
+    margin-right: 4rem;
+    color: #fe0760;
+}
+
 h1:hover{
     background-color: transparent;
     color: red;
     font-size: 3em;
 }
+
 h1:hover h1 {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
 .container{
     display: flex;
     justify-content: space-around;
 }
-.container .MyTopNine {
-    width: 40%;
-    height: 450px;
-    margin: 30px;
+
+.container .main-content .topnine-image img {
+    width: 32%;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .container .main-content {
     margin: 150px;
 }
+
 .container .main-content h1 {
     font-size: 26px;
     font-family: 'Ubuntu', sans-serif;
     margin: 10px;
 }
+
 .container .main-content p {
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;

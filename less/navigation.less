@@ -1,7 +1,49 @@
 // Navigation code here
-
 nav {
-    width: 800px;
-    background-color:@nav-bg;
+    width: 100%;
+    background-color: @nav-bg;
+    background-color: @red;
+    
+    @media @phone{
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 0 auto; 
+        .flex-nav1; 
+
+        @media @phone {
+            
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+
+            
+        }
+    }
 }
+
+.navigation {
+    width: 60%;
+    padding:10px 0;
+    .flex-nav; 
+    width: 100%;
+    
+    @media @phone {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
 
