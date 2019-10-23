@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  html,
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 500px) {
+    html,
+    body {
+      width: 100%;
+    }
+  }
+  h1{
+    font-family: 'Ubuntu', sans-serif;
+    color:black;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+  .home .intro img {
+    border-radius: 5px;
+  }
+
+ @media only screen and (max-width: 500px) {
+    .home .intro img {
+      width: 100%;
+    }
+  }
+  .home .topnine-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .home .topnine-images img {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .topnine-images img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .home .contact {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .home .movies {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .home .Feautures {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+  }
+  .home .Feautures .Feautures-text {
+    width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .Feautures .Feautures-text {
+      margin-top: 20px;
+    }
+  }
+  .home .Feautures .Feautures-text {
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 1.8rem;
+    background-color:black;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    
+    justify-content: center;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .Feautures .Feautures-text .btn {
+      height: 40px;
+      width: 100%;
+      color: white;
+      font-size: 1.8rem;
+      background-color: #22283A;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 5px;
+      display: flex;
+      /* align-center: center; */
+      justify-content: center;
+    }
+  }
+  .home .Feautures .Feautures-text-img {
+    width: 46%;
+    margin-left: 4%;
+  }
+  @media only screen and (max-width: 500px) {
+    .home .Feautures .Feautures-text-img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .home .Feautures .Feautures-text-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+ 
+  /* nav {
+    width: 100%;
+    background-color: #F6F6F6;
+    background-color: #F35667;
+  } */
+  @media only screen and (max-width: 500px) {
+    nav {
+      width: 100%;
+    }
+  }
+
+  /* nav .nav h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  } */
+  /* .navigation {
+    width: 60%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  } */
+  @media only screen and (max-width: 500px) {
+    .navigation {
+      width: 100%;
+    }
+  }
+  
+
+  footer {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: lightgray;
+    margin-bottom: 20px;  
+
+  }
+
+  /* .logo {
+    width: 50%;
+    height: 100%;
+    padding: 1.8rem 3.5rem;
+    align-self: center;
+    color:white;
+    font-size: 3.6rem;
+    font-weight: bold;
+    
+    text-decoration: none;
+} */
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+          
+}
+
+.nav a{
+  text-decoration: none;
+  color: #4664db;
+}
+
+.main-container{
+  width: 100%;
+  font-size: 30px;
+  height: 100vh;
+ 
+}
+
+.about-us{
+  color: #4664db;
+  font-size: 30px;
+}
+
+/* 
+ .nav a {
+    margin: 0 2.0rem;    
+    text-decoration: none;
+    font-size: 2.2rem;
+    
+} */
+
+
+
+.TopNine-Team{
+  display:flex;
+margin-top: 45px;
+margin-bottom: 45px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.my-team-members{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.about-us-paragraph{
+  margin-top:20px;
+  margin-top:20px;
+  font-size: 25px;
+}
+
+.image{
+  width: 320px;
+}
+
+.section{
+  display:flex;
+  width:50%;
+}
