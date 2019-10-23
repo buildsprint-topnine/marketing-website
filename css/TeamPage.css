@@ -25,14 +25,14 @@
     line-height: 1.4;
   }
   .container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: auto;
   }
   .home .intro img {
     border-radius: 5px;
   }
-  @media only screen and (max-width: 500px) {
+
+ @media only screen and (max-width: 500px) {
     .home .intro img {
       width: 100%;
     }
@@ -89,7 +89,7 @@
     padding: 10px 0;
     border-radius: 5px;
     display: flex;
-    align-center: center;
+    
     justify-content: center;
   }
   @media only screen and (max-width: 500px) {
@@ -103,7 +103,7 @@
       padding: 10px 0;
       border-radius: 5px;
       display: flex;
-      align-center: center;
+      /* align-center: center; */
       justify-content: center;
     }
   }
@@ -122,54 +122,46 @@
     height: auto;
     border-radius: 10px;
   }
-  :hover {
-    background-color: white;
-    color: #22283A;
-  }
-  nav {
+ 
+  /* nav {
     width: 100%;
     background-color: #F6F6F6;
     background-color: #F35667;
-  }
+  } */
   @media only screen and (max-width: 500px) {
     nav {
       width: 100%;
     }
   }
 
-  nav .nav h1 {
+  /* nav .nav h1 {
     font-size: 3rem;
     margin: 20px 0;
-  }
-  .navigation {
+  } */
+  /* .navigation {
     width: 60%;
     padding: 10px 0;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-  }
+  } */
   @media only screen and (max-width: 500px) {
     .navigation {
       width: 100%;
     }
   }
-  .navigation a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-  }
+  
+
   footer {
-    color:black;
-    background:red;
-    padding: 20px 0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: lightgray;
+    margin-bottom: 20px;  
+
   }
 
-  .logo {
+  /* .logo {
     width: 50%;
     height: 100%;
     padding: 1.8rem 3.5rem;
@@ -177,42 +169,67 @@
     color:white;
     font-size: 3.6rem;
     font-weight: bold;
-    background: #1a3642;
+    
     text-decoration: none;
-}
+} */
 
 .nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    background: #1a3642;
-    
-}
-.nav .nav li {
-    list-style: none;
-    margin: 0;
-    font-size: 3em;
-    color: white;
-    text-decoration: none;
-
+    justify-content: space-evenly;
+          
 }
 
+.nav a{
+  text-decoration: none;
+  color: #4664db;
+}
+
+.main-container{
+  width: 100%;
+  font-size: 30px;
+  height: 100vh;
+ 
+}
+
+.about-us{
+  color: #4664db;
+  font-size: 30px;
+}
+
+/* 
  .nav a {
-    margin: 0 2.0rem;
-    color: red;
+    margin: 0 2.0rem;    
     text-decoration: none;
     font-size: 2.2rem;
-    font-weight: 600;
-}
-h1:hover{
-    background-color: transparent;
-    color: red;
-    font-size: 3em;
+    
+} */
+
+
+
+.TopNine-Team{
+  display:flex;
+margin-top: 45px;
+margin-bottom: 45px;
+display: flex;
+flex-wrap: wrap;
 }
 
-h1:hover h1 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+.my-team-members{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.about-us-paragraph{
+  margin-top:20px;
+  margin-top:20px;
+  font-size: 25px;
+}
+
+.image{
+  width: 320px;
+}
+
+.section{
+  display:flex;
+  width:50%;
 }
